@@ -94,4 +94,26 @@ public class Job {
     public int getId() {
         return id;
     }
+
+    @Override
+    public String toString(){
+        if(name == null || name.isEmpty()) {
+            name = "Data Not Available";
+        }
+        if(employer.getValue() == null || employer.getValue().isEmpty()) {
+            employer.setValue("Data Not Available");
+        }
+        if(location.getValue() == null || location.getValue().isEmpty()) {
+            location.setValue("Data Not Available");
+        }
+        if(positionType.getValue() == null || positionType.getValue().isEmpty()) {
+            positionType.setValue("Data Not Available");
+        }
+        if(coreCompetency.getValue() == null || coreCompetency.getValue().isEmpty()) {
+            coreCompetency.setValue("Data Not Available");
+        }
+        return "\n" + "ID: " + id + "\nName: " + name + "\nEmployer: " + employer.getValue() + "\nLocation: "
+                + location.getValue() + "\nPosition Type: " + positionType.getValue() + "\nCore Competency: "
+                + coreCompetency.getValue() + "\n";
+    }
 }
