@@ -98,19 +98,19 @@ public class Job {
     @Override
     public String toString(){
         if(name == null || name.isEmpty()) {
-            name = "Data Not Available";
+            name = "Data not available";
         }
         if(employer.getValue() == null || employer.getValue().isEmpty()) {
-            employer.setValue("Data Not Available");
+            employer.setValue("Data not available");
         }
         if(location.getValue() == null || location.getValue().isEmpty()) {
-            location.setValue("Data Not Available");
+            location.setValue("Data not available");
         }
         if(positionType.getValue() == null || positionType.getValue().isEmpty()) {
-            positionType.setValue("Data Not Available");
+            positionType.setValue("Data not available");
         }
         if(coreCompetency.getValue() == null || coreCompetency.getValue().isEmpty()) {
-            coreCompetency.setValue("Data Not Available");
+            coreCompetency.setValue("Data not available");
         }
         return "\n" + "ID: " + id + "\nName: " + name + "\nEmployer: " + employer.getValue() + "\nLocation: "
                 + location.getValue() + "\nPosition Type: " + positionType.getValue() + "\nCore Competency: "

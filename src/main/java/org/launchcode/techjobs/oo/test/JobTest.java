@@ -47,7 +47,7 @@ public class JobTest {
     }
 
     @Test
-    public void testToStringStartsAndEndsWithNewLIne(){
+    public void testToStringStartsAndEndsWithNewLine(){
         Job testJob3 = new Job("Product Tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality Control"), new CoreCompetency("Persistence"));
         assertEquals('\n', testJob3.toString().charAt(0));
         assertEquals('\n', testJob3.toString().charAt(testJob3.toString().length() - 1));
